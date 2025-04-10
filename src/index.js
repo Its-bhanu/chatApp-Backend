@@ -19,7 +19,8 @@ const __dirname = path.resolve();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: "*",
+  origin: 'https://chat-app-frontend111.vercel.app', // ✅ your frontend URL
+  credentials: true                                   // ✅ allow credentials
 }));
 
 app.use("/api/auth", authRoutes);
