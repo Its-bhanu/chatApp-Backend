@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://chat-me-rosy-eta.vercel.app",
+    origin: "*",
     credentials: true,
   })
 );
